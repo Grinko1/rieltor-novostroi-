@@ -1,0 +1,87 @@
+.consul-container {
+ min-height: 800px;
+  .empty {
+    height: 40px;
+  }
+  h1, h3 {
+    text-align: center;
+    color: rgb(97, 96, 96);
+  }
+  .first-block{
+      border-bottom:1px solid lightgray
+  }
+
+  .self-block {
+      margin: auto;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 50px;
+   
+    p {
+      text-align: center;
+    }
+
+    .key {
+      border-bottom: 1px solid lightgray;
+      b {
+        padding: 1em;
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+    .value {
+      border-bottom: 1px solid lightgray;
+
+      .tel-icon {
+        font-size: 20px;
+        margin-right: 5px;
+        color: brown;
+      }
+      .whats-icon {
+        font-size: 20px;
+        color: green;
+      }
+      .insta-icon{
+        font-size: 20px;
+        color: rgb(231, 56, 114);
+      }
+    }
+  }
+  .second-block{
+    color: rgb(97, 96, 96);
+      .formForCall{
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      max-width: 400px;
+      margin-bottom: 50px;
+      input{
+         border-radius: 5px;
+         border:1px solid lightgray;
+          margin-bottom: 10px;
+          padding: 10px;
+      }
+      .btn-order-call{
+          padding: 10px;
+          border: none;
+          color: white;
+          background-color: rgb(15,94,142);
+          font-size: 18px;
+          font-weight: 500;
+          border-radius: 10px;
+      }
+  }
+  }
+
+}
+
+@media (max-width: 420px) {
+  .second-block{
+    .formForCall{
+      width: 350px;
+    }
+  }
+}

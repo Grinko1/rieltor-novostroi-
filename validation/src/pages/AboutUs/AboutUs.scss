@@ -1,0 +1,128 @@
+.aboutUs{
+    min-height: 800px;
+    .empty{
+        height: 50px;
+    }
+    h1{
+        text-align: center;
+        color: rgb(94, 102, 110);
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .first-container{
+        display: flex;
+        // background-color: white;
+        justify-content: space-between;
+        
+        .aboutus-desc{
+            
+            padding: 20px 50px;
+            color: rgb(94, 102, 110);
+            line-height: 1.1;
+            font-size: 18px;
+
+
+        }
+
+        .aboutus-img{
+            // width:50%;
+            img{
+                width: 500px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .second-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        .circl-info{
+            width: 150px;
+            height: 150px;
+            padding: 30px;
+            border-radius: 50%;
+            background-color: white;
+            color: rgb(94, 102, 110);
+            transition: all 0.2s;
+
+            p{
+                text-align: center;
+               
+            }
+            .icon{
+               margin: auto;
+                font-size: 50px;
+            }
+        }
+        .circl-info:hover{
+            transform: scale(1.2);
+        }
+
+    }
+}
+@media (max-width: 450px) {
+    .aboutUs{
+ 
+        .first-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+    
+            .aboutus-img{
+                // width:50%;
+                img{
+                    width: 350px !important;
+                   margin-left: 5%;
+                }
+            }
+        }
+        .second-container{
+            flex-direction: column;
+            margin-top: 50px;
+    
+            .circl-info{
+  
+                margin-bottom: 15px;
+            }
+          
+    
+        }
+    }
+}
+@media (max-width: 750px) {
+    .aboutUs{
+ 
+        .first-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+    
+            .aboutus-img{
+                // width:50%;
+                width: 500px;
+                margin: auto;
+                // margin: auto;
+                img{
+                    width: 500px;
+                //    margin-left: 5%;
+                }
+            }
+        }
+        .second-container{
+            // flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 50px;
+    
+            .circl-info{
+  
+                margin-bottom: 15px;
+            }
+          
+    
+        }
+    }
+}

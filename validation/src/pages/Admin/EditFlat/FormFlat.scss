@@ -1,0 +1,157 @@
+
+.formEdit{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30% ;
+
+    .dropZcenter{
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .oldImg-container{
+        max-width: 500px;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        img{
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            position: relative;
+            margin-left: 10px;
+        }
+        .deleteOldImg{
+            color: red;
+            margin-left: -10px;
+            margin-top: -7px;
+            z-index: 50;
+            cursor: pointer;
+            position: absolute;
+            font-size: 20px;
+          
+        }
+    }
+
+    .group-input{
+      
+        input{
+            width: 500px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius:5px;
+            border: 1px solid lightgray;
+        }
+
+        textarea{
+            width: 500px;
+            padding: 10px;
+            border-radius:5px;
+            border: 1px solid lightgray;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .groupSmallInput{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 600px;
+            div{
+                width: 250px;
+            }
+
+           .smallInput{
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius:5px;
+            border: 1px solid lightgray;
+        }  
+        }
+       
+    }
+
+    .group-select{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-left: 30px;
+        max-width: 500px;
+        select{
+            width: 200px;
+            width: 300px;
+            padding: 5px;
+            border: 1px solid orange;
+            border-radius: 5px;
+        }
+    }
+    .btn-update-flat{
+        width: 400px;
+        margin: 30px 0 30px 50px;
+        padding: 10px;
+        background-color:rgb(15,94,142);
+        color:white;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+
+    }
+}
+@media (max-width: 420px) {
+.formEdit{
+    max-width: 350px;
+    margin-left: 10% ;
+    .dropZcenter{
+        max-width: 350px;
+    
+    }
+    .group-input{
+        input{
+            width: 300px;
+        }
+        textarea{
+           width: 300px;
+        }
+        .groupSmallInput{
+            display: grid;
+            width: 350px !important;
+            div{
+                width: 150px;
+            }
+
+            // grid-template-columns: 1fr ;
+
+           .smallInput{
+            width: 140px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius:5px;
+            border: 1px solid lightgray;
+        }  
+        }
+    }
+    .group-select{
+        margin-left: 10px;
+        max-width: 350px;
+        grid-template-columns: 1fr ;
+   
+    }
+    .btn-update-flat{
+        width: 300px;
+        margin:auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        background-color:rgb(15,94,142);
+        color:white;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+
+    }
+}
+}

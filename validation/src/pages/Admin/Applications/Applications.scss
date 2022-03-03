@@ -1,0 +1,35 @@
+.main{
+    .item-request{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 5%;
+       
+    }
+
+    .oneApplicat{
+        font-size: 18px;
+        border: 1px solid lightgray;
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        .isDone{
+            display: flex;
+            justify-content: space-between;
+            .delete-appl{
+                color: red;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+     
+    }
+}
+@media(max-width: 420px) {
+    .main{
+        .item-request{
+            grid-template-columns: 1fr;
+        }
+    }
+}

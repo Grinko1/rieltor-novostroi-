@@ -1,0 +1,220 @@
+.ipoteka-container{
+    min-height: 1700px;
+    .empty{
+        height: 60px;
+    }
+    h1, h3{
+        text-align: center;
+        color: rgb(94, 102, 110);
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .ipoteka-first{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        line-height: 1.3;
+        background-color: white;
+        padding: 20px;
+
+        .ipoteka-first-img{
+            max-width: 500px;
+            img{
+                max-width: 500px;
+                border-radius: 5px;
+            }
+        }
+        .ipoteka-first-desc{
+            max-width: 700px;
+            p{
+                max-width: 600px;
+                margin: auto;
+                text-align: center;
+            }
+           
+        }
+    }
+    .ipoteka-second{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        .ipoteka-each{
+            width: 300px;
+            height: 550px;
+            background-color: white;
+            img{
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+            }
+            p{
+                text-align: center;
+            }
+  
+            .ipoteka-each-p{
+                content: "";
+                display: block;
+                left: -10%;
+                top: -10%;
+                height: 120%;
+                border: 5px solid rgb(248, 228, 161);
+                border-radius: 50%;
+            }
+            ol{
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .ipoteka-first{
+        flex-direction: column ;
+        width: 350px !important;
+        margin: auto;
+
+
+        .ipoteka-first-img{
+           width: 350px ;
+           flex-direction: row ;
+            img{
+               width: 350px !important;
+     
+            }
+        }
+        .ipoteka-first-desc{
+           max-width: 350px !important;
+            p{
+                width: 300px !important;
+                margin: auto;
+                text-align: center;
+            }
+           
+        }
+    }
+    .ipoteka-second{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    .ipoteka-each{
+        width: 300px;
+        height: 550px;
+        background-color: white;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        p{
+            text-align: center;
+        }
+
+        .ipoteka-each-p{
+            content: "";
+            display: block;
+            left: -10%;
+            top: -10%;
+            height: 120%;
+            border: 5px solid rgb(248, 228, 161);
+            border-radius: 50%;
+        }
+        ol{
+            width: 250px;
+        }
+    }
+}
+}
+@media (max-width: 700px) {
+    .ipoteka-first{
+    
+        width: 600px ;
+    
+        .ipoteka-first-img{
+            display: flex;
+            // width: 250px !important;
+            justify-content: space-between ;
+            img{
+               width: 250px ;
+                margin-left: 5%;
+            }
+    }
+    .ipoteka-first-desc{
+           width: 500px ;
+           margin: auto;
+            p{
+                width: 500px ;
+                margin: auto;
+                text-align: center;
+            }
+        }
+}
+}
+@media (max-width: 900px) {
+    .ipoteka-first{
+        flex-direction: column;
+        width: 600px ;
+        // width: 500px !important;
+        margin: auto;
+
+
+        .ipoteka-first-img{
+            display: flex;
+            justify-content: space-between ;
+            width: 300px ;
+            margin: auto;
+            // margin-left: 10%;
+            img{
+                max-width: 300px ;
+                margin-left: 10%;
+            }
+            img:last-child{
+                display: none;
+            }
+        }
+        .ipoteka-first-desc{
+        //    width: 700px !important;
+           margin: auto;
+            p{
+                width: 500px ;
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+    .ipoteka-second{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    .ipoteka-each{
+        width: 300px;
+        height: 550px;
+        background-color: white;
+        // margin-left: 10%;
+        margin-bottom: 10px;
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        p{
+            text-align: center;
+        }
+
+        .ipoteka-each-p{
+            content: "";
+            display: block;
+            left: -10%;
+            top: -10%;
+            height: 120%;
+            border: 5px solid rgb(248, 228, 161);
+            border-radius: 50%;
+        }
+        ol{
+            width: 250px;
+        }
+    }
+}
+}

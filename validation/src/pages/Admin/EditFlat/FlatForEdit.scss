@@ -1,0 +1,153 @@
+.listOfFlat{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.modal-btns{
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-around;
+  .modal-btn{
+    background-color: white;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  .modal-btn.delete{
+    border: 1px solid red;
+    color: red;
+  }
+  .modal-btn.cancel{
+    border: 1px solid green;
+    color: green;
+  }
+
+}
+.item-flat{
+max-width: 600px;
+background-color: white;
+margin: auto;
+padding: 10px;
+border-bottom: 1px solid lightgray;
+margin-bottom: 10px;
+border-radius: 10px;
+h1{
+    text-align: center;
+}
+.item-info{
+b{
+  padding: 30px;
+}
+
+p{
+    width: 400px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.title{
+  height: 60px;
+}
+.forCentrImg{
+  width: 300px;
+  margin: auto;
+
+  .item-flat-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+  }
+}
+.forCentrDesc{
+  max-width: 400px;
+  margin: auto;
+  text-align: start;
+}
+.forCentrBtn{
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  a{
+    text-decoration: none;
+  }
+}
+
+.btn {
+  background-color: white;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.btn-edit {
+  border: 1px solid green;
+  color: green;
+}
+.btn-delete {
+  border: 1px solid red;
+  color: red;
+  
+}
+}
+
+}
+@media(max-width: 420px){
+  .listOfFlat{
+    grid-template-columns:  1fr !important;
+    .item-flat{
+      .item-info{
+        .forCentrDesc{
+          max-width:350px !important;
+          margin-left: 5%;
+        }
+        .forCentrImg{
+          .item-flat-img{
+            margin-left: 10%;
+          }
+        }
+           p{
+      width: 300px;
+      text-align: center;
+
+  }
+      }
+    }
+ 
+  }
+}
+@media (max-width: 420px) {
+  .admin-form{
+      max-width: 390px;
+      .dropzone{
+          margin-left: auto!important;
+      }
+      .group-input{
+          margin-left: 10px !important;
+
+          input {
+              width: 300px;
+          }
+     }
+     .groupSmallInput{
+     .smallInput{
+         input{
+              width: 140px;
+         }
+  }
+
+}
+.group-select{
+  grid-template-columns: 1fr ;
+  gap: 30px;
+  margin-left: 10% !important;
+}
+.btn-add-flat{
+  max-width: 300px;
+  margin-left: 10% !important;
+}
+}
+}

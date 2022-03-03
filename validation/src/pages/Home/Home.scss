@@ -1,0 +1,24 @@
+.sort{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .btn-reset{
+        border: 1px solid white;
+        background-color: lightsalmon;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    select{
+        padding: 10px;
+        border: 1px solid orange;
+        border-radius: 5px;
+    }
+}
+.main-hame{
+    min-height: 800px;
+}

@@ -1,0 +1,100 @@
+.admin-form{
+    max-width: 800px;
+    margin: auto;
+    min-height: 1000px;
+    .dropzone{
+        margin-left: 25%;
+    }
+    .group-select{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-left: 20%  !important;
+    }
+    .groupSmallInput{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+       .smallInput{
+           input{
+              width: 200px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius:5px;
+        border: 1px solid lightgray;  
+           }
+       
+    }  
+    }
+    .group-input{
+         margin-left: 20%;
+    }
+    .form{
+       
+        div{
+            margin-bottom: 10px;
+          
+        }
+        input{
+            width: 600px;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        p{
+            width: 200px;
+        }
+        select{
+            width: 300px;
+            padding: 5px;
+            border: 1px solid orange;
+            border-radius: 5px;
+        }
+        .btn-add-flat{
+            width: 400px;
+            background-color:rgb(15,94,142);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-left: 30%;
+            margin-top: 30px;
+            
+        }
+    }
+
+   
+  
+} 
+@media (max-width: 420px) {
+        .admin-form{
+            max-width: 390px;
+            .dropzone{
+                margin-left: auto!important;
+            }
+            .group-input{
+                margin-left: 10px !important;
+
+                input {
+                    width: 300px;
+                }
+           }
+           .groupSmallInput{
+           .smallInput{
+               input{
+                    width: 140px;
+               }
+        }
+    
+    }
+    .group-select{
+        grid-template-columns: 1fr ;
+        gap: 30px;
+        margin-left: 10% !important;
+    }
+    .btn-add-flat{
+        max-width: 300px;
+        margin-left: 10% !important;
+    }
+}
+}

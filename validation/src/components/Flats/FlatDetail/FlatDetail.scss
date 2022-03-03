@@ -1,0 +1,136 @@
+.flat-detail{
+    // margin-top: 150px;
+   
+    h2{
+        text-align: center;
+        color: dimgrey;
+    }
+    .empty{
+        height: 100px;
+    }
+    .detail_carousel{
+        width: 800px;
+        margin: auto;
+        margin-top: 10px;
+       .detail_img{
+        width: 800px;
+        height: 500px;
+        object-fit: cover;
+    }  
+    }
+
+ 
+
+    .detail_title{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .detail_info{
+        max-width: 1000px;
+    
+        margin: auto;
+        border-radius: 10px;
+        background-color: white;
+        margin-bottom: 20px;
+        .icon{
+            color: gray;
+            margin-right: 5px;
+            font-size: 20px;
+        }
+        .detail-area{
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+           b{
+               padding: 1em;
+               width: 500px;
+
+           }
+        }
+
+        .detail_price{
+            display: flex;
+           text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            b{
+                padding: 1em;
+                width: 500px;
+            }
+        }
+        .detail-addition{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-around;
+            div{
+                
+                width: 300px;
+                text-align: center;
+                height: 120px;
+               
+            }
+        }
+    }
+
+    .detail_desc{
+        max-width: 1000px;
+        padding: 20px;
+        margin: auto;
+        border-radius: 10px;
+        background-color: white;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        p{
+            max-width: 800px;
+            text-align: center;
+            margin: auto;
+        }
+        .flat-item-btns{
+            display: flex;
+            justify-content: space-around;
+            color: dimgrey;
+            margin-top: 25px;
+            .flat-item-btn{
+                width: 200px;
+                font-size: 18px;
+                cursor: pointer;
+                padding: 10px;
+                text-align: center;
+                transition: all ease-in-out 0.2s;
+                margin-right: 5px;
+            }
+  
+        .flat-item-btn:hover{
+            background-color: rgb(141, 141, 141);
+            border-radius: 15px;
+            color: white;
+        }
+    }
+        .favorite{
+            width: 200px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 15px;
+            padding: 10px;
+            transition: all ease-in-out 0.2s;
+        }
+        .favorite:hover{
+            background-color: rgb(141, 141, 141);
+            border-radius: 15px;
+            color: white;
+        }
+    }
+   .mapStyle{
+       max-width: 800px;
+       height: 500px;
+       margin: auto;
+   }
+   @media (max-width: 420px) {
+    .mapStyle{
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+   }
+}

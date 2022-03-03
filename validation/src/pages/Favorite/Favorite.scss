@@ -1,0 +1,36 @@
+.favorited{
+    min-height: 600px;
+    
+    .ifEmpty{
+        margin-top: 8%;
+        h2, p{
+            text-align: center;
+            color: rgb(97, 96, 96);
+        }
+        h4{
+            text-align: center;
+        }
+        .fav-book{
+            font-size: 100px;
+            font-weight: 700;
+        }
+    }
+   .empty{
+    height: 1px;
+    margin-top: 40px;
+}
+
+h1{
+    color:darkblue;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+ 
+.flat-item-favorite.red{
+    color:red;
+    cursor: pointer;
+}
+
+
+}
